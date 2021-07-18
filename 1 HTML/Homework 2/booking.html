@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <style>
+        table, th, td {
+            border: none;
+            border-collapse: collapse;
+            font-weight: bold;
+            margin: 10px;
+            padding: 10px 10px;
+        }
+        fieldset {
+            background-color: #EBF5FB;
+            font-family: Arial;
+            font-style: oblique;
+            border-color:lightgray;
+            width: 500px;
+        }
+        legend {
+            background-color:dodgerblue;
+            color: white;
+            font-weight: bold;
+            padding: 9px 18px;
+            font-size: 25px;
+        }
+        button {
+            padding: 12px 28px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: lightskyblue;
+            color: white;
+            border: 2px solid lightskyblue;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(55, 153, 252);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <fieldset>
+                <legend>Book Flight</legend>
+
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <label for="origin">Flying from</label>
+                        <br>
+                        <input type="text" id="origin" name="origin" placeholder="Bangkok (Suvarnabhumi) - Thailand [BKK]">
+                    </td>
+                    <td colspan="2">
+                        <label for="destination">To</label>
+                        <br>
+                        <input type="text" id="destination" name="destination" placeholder="Seattle - United States of America [SEA]">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <lable for="departDate">Departing</lable>
+                        <br>
+                        <input type="date" id="departDate" name="departDate">
+                    </td>
+                    <td colspan="2">
+                        <lable for="returnDate">Returning</lable>
+                        <br>
+                        <input type="date" id="returnDate" name="returnDate">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="qtyAdult">Adult</label>
+                        <br>
+                        <input type="number" id="qtyAdult" name="qtyAdult" min="1" max="10" value="1">
+                    </td>
+                    <td>
+                        <label for="qtyChild">Child</label>
+                        <br>
+                        <input type="number" id="qtyChild" name="qtyChild" min="0" max="10" value="0">
+                    </td>
+                    <td>
+                        <label for="qtyInfant">Infant</label>
+                        <br>
+                        <input type="number" id="qtyInfant" name="qtyInfant" min="0" max="10" value="0">
+                    </td>
+                    <td>
+                        <label for="currency">Currency</label>
+                        <br>
+                        <select id="currency" name="currency" value="THB">
+                            <option value:="THB">THB</option>
+                            <option value:="USD">USD</option>
+                            <option value:="GBP">GBP</option>
+                            <option value:="EUR">EUR</option>
+                            <option value:="CNY">CNY</option>
+                            <option value:="JPY">JPY</option>
+                            <option value:="SGD">SGD</option>
+                            <option value:="HKD">HKD</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">
+                        <button class="button">SEARCH</button>
+                    </td>
+                </tr>
+            </table>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
