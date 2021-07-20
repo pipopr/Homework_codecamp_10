@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-family:Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+        header {
+            background-color: #f1f2f6;
+            color: #f1f2f6;
+            height: 10vh;
+        }
+        main {
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        main > * {
+            flex: 1;
+        }
+        .main-l, .main-r {
+            background-color: #f1f2f6;
+            color: #f1f2f6;
+            text-align: center;
+            flex-basis: 100px;
+        }
+        .main-c {
+            background-color: #f1f2f6;
+            flex: 5 500px;
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .main-c > * {
+            width: 40%;
+            height: 50%;
+            display: flex;
+            margin: 30px 50px;
+            align-items: center;
+        }
+        .box1 {
+            position: relative;
+            top: 10vh;
+            width: 480px;
+            height: 150px;
+            display: block;
+            text-align: left;
+            padding: 10px
+        }
+        #word1 {
+            font-size: 50px;
+            font-weight: 600;
+            color: #177efc;
+        }
+        #word2 {
+            font-size: 20px;
+        }
+        .box2big {
+            width: 396px;
+            height: 456px;
+            display: block;
+            position: relative;
+            top: 10vh;
+        }
+        .box2big > span {
+            position: relative;
+            top: 20px;
+        }
+        .box2small {
+            background-color: #ffffff;
+            border-radius: 5px;
+            width: 100%;
+            height: 80%;
+            display: block;
+            padding: 20px;
+        }
+        #username, #password {
+            width: 350px;
+            height: 50px;
+            padding: 10px 8px;
+            font-size: 16px;
+            border-color: rgb(172, 172, 172);
+            border-width: 1px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        #button1 {
+            background-color: #1977f3;
+            color: white;
+            width: 100%;
+            height: 50px;
+            padding: 14px 0;
+            margin: 10px 0;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        #button1:hover {
+            background-color: #046df7;
+            cursor: pointer;
+        }
+        #button2 {
+            background-color: #50c738;
+            color: white;
+            width: 70%;
+            height: 50px;
+            padding: 14px 0;
+            margin: 10px 0;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+        #button2:hover {
+            background-color: #32a51b;
+            cursor: pointer;
+        }
+        #link1 {
+            color: #2995fa;
+            text-decoration: none;
+        }
+        #link1:hover {
+            color: #2995fa;
+            text-decoration: underline;
+        }
+        #link1:visited {
+            text-decoration: none;
+        }
+        footer {
+            background-color: #ffffff;
+            color: #ffffff;
+            height: 10vh;
+        }
+
+        @media (max-width: 1500px) {
+            .main-c {
+                margin: 0px;
+            }
+            .box1 {
+                position: absolute;
+                text-align: center;
+                margin: -20px;
+            }
+            .box2 {
+                position: absolute;
+            }
+        }
+    </style>
+</head>
+<body>
+    <Header>
+        <h1 style="text-align:center;">Header</h1>
+    </Header>
+    <main>
+        <div class="main-l">
+            <h1>Left</h1>
+        </div>
+
+        <div class="main-c">
+            <div class="box1">
+                <div><span id="word1">fakebook</span></div>
+                <br>
+                <div><span id="word2">Fakebook helps you connect and share with the people in your life.</span></div>
+            </div>
+
+            <div class="box2big">
+                <div class="box2small">
+                    <div class="form1">
+                        <input type="text" id="username" name="username" placeholder="Email or Phone Number"><br>
+                    </div>
+                    <div class="form2">
+                        <input type="text" id="password" name="password" placeholder="Password"><br>
+                    </div>
+                    <button type="submit" id="button1" href="#"><strong>Log In</strong></button>
+                    <div style="margin:10px;"><a id="link1" href="#">Forget Password?</a></div>
+                    <hr>
+                    <div class="signinbutton"></div>
+                    <button type="submit" id="button2" href="#"><strong>Create New Account</strong></button>
+                </div>
+                <span><b>Create a Page</b> for a celebrity. band or business</span>
+            </div>
+        </div>
+
+        <div class="main-r">
+            <h1>Right</h1>
+        </div>
+    </main>
+    <footer>
+        <h1 style="text-align:center;">Footer</h1>
+    </footer>
+</body>
+</html>
