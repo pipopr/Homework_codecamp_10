@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Switch 1</title>
+</head>
+<body>
+    <script>
+        // แปลง Code ดังกล่าวเป็น if-else statement
+        // switch (browser) {
+        //    case 'Edge':
+        //        alert( "You've got the Edge!" );
+        //        break;
+
+        //    case 'Chrome':
+        //    case 'Firefox':
+        //    case 'Safari':
+        //    case 'Opera':
+        //        alert( 'Okay we support these browsers too' );
+        //        break;
+
+        //    default:
+        //        alert( 'We hope that this page looks ok!' );
+        //}
+
+        let browser = prompt("What is your browser?")
+        
+        if (browser === "Edge" || browser === "edge") {
+            alert( "You've got the Edge!" );
+        } else if (browser === "Chrome" || browser === "chrome" || browser === "Firefox" || browser === "firefox" || browser === "Safari" || browser === "safari" || browser === "Opera" || browser === "opera") {
+            alert("Okay we support these browsers too");
+        } else {
+            alert("We hope that this page looks ok!");
+        }
+    </script>
+</body>
+</html>

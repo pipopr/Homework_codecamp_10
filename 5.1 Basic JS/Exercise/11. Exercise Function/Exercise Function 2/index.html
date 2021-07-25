@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Function 2</title>
+</head>
+<body>
+    <script>
+        // จงเขียน method draw(int n) ให้ print ออกมาในกรณีที่ n มีค่าต่างๆ ได้ผลลัพธ์ดังนี้
+        //                         ****
+        //             ***         ****
+        // **          ***         ****        
+        // **          ***         ****
+        // n=2         n=3         n=4
+
+    function draw(n) {
+        let star = ""
+        for (let row = 0; row < n; row++) {
+            star = star + "*";
+        }
+        for (let column = 0; column < n; column++) {
+            console.log(star);
+        }
+    }
+    </script>
+</body>
+</html>

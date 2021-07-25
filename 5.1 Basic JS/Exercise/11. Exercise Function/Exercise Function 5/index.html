@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Function 5</title>
+</head>
+<body>
+    <script>
+        // จงเขียน method draw(int n) ให้ print ออกมาในกรณีที่ n มีค่าต่างๆ ได้ผลลัพธ์ดังนี้
+        //                         4444
+        //             333         3333
+        // 22          222         2222        
+        // 11          111         1111
+        // n=2         n=3         n=4
+
+    function draw(n) {
+        let num = ""
+        for (let row = n; row > 0; row--) {
+            for (let column = n; column > 0; column--) {
+                num = num + row;
+            }
+            num = num + "\n"
+        }
+        console.log(num)
+    }
+    </script>
+</body>
+</html>

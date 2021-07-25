@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Loop 6</title>
+</head>
+<body>
+    <script>
+        let number1 = +prompt("Player 1 please select number from 1 - 100");
+
+        if (number1 > 0 && number1 <= 100) {
+            while (true) {
+                let number2 = +prompt("Player 2 please guess what number is selceted by Player 1 (1 - 100)");
+                if (number1 === number2) {
+                    alert("Player 2 won!!, Press F5 to start new round");
+                    break;
+                } else if (number1 < number2 && number2 <= 100) {
+                        alert("Too high, try harder");
+                } else if (number1 > number2 && number2 >= 1) {
+                        alert("Too low, try harder");
+                } else {
+                    alert("not valid, please select number from 1 - 100");
+                }
+            }
+        } else {
+            alert("not valid, GAME END!! PLEASE PRESS F5");
+        }
+    </script>
+</body>
+</html>
