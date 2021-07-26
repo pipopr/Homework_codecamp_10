@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Computed 1</title>
+</head>
+<body>
+    <script>
+        // ให้เขียนโปรแกรมที่รับค่า key และ value ของ Properties ของ Object หนึ่ง จนกว่าจะเจอคำว่า 
+        // stop และนำค่าเหล่านั้นมาสร้าง Object หลังจากนั้น console.log() object นั้นออกมา
+
+        let key = prompt("Enter key: ");
+        let obj = {};
+
+        while (key !== "stop") {
+            let value = prompt("Enter value: ");
+            obj[key] = value;
+            key = prompt("Enter key: ")
+        }
+        console.log(obj);
+    </script>
+</body>
+</html>

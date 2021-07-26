@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Object 2</title>
+</head>
+<body>
+    <script>
+        // ให้เขียนฟังก์ชันชื่อ isEmpty(obj) โดยจะมี parameters เป็น obj และ ฟังก์ชันนี้จะเช็คว่า 
+        // obj นี้มี properties ไหม ถ้ามีให้คืนค่า false ถ้าไม่มีให้คืนค่า true
+
+        function isEmpty(obj) {
+            for (let key in obj) {
+                return false;
+            }
+            return true;
+        }
+
+        let obj = {};
+        console.log( isEmpty(obj) );
+    </script>
+</body>
+</html>

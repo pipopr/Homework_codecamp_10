@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Computed 2</title>
+</head>
+<body>
+    <script>
+        // ให้เขียนโปรแกรมที่รับค่า key และ value ของ Properties ของ Object หนึ่ง โดยให้ key เป็นชื่อของผลไม้ 
+        // และ value เป็นจำนวนของผลไม้ (number) โดยถ้า ผลไม้ชนิดไหนที่มีมากกว่า 1 ผล ให้เติม s ไปหลัง key นั้นด้วย
+
+        let key = prompt("Enter fruit's name: ");
+        let obj = {};
+
+        while (key !== "stop") {
+            let value = prompt(`Enter ${key} quantity: `);
+            if (Number(value) > 1) {
+                key = key + "s";
+            }
+            obj[key] = value;
+            key = prompt("Enter fruit's name: ");
+        }
+        console.log(obj);
+    </script>
+</body>
+</html>
