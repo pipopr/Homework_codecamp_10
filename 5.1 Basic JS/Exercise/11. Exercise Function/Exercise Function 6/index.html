@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Function 6</title>
+</head>
+<body>
+    <script>
+        // จงเขียน method draw(int n) ให้ print ออกมาในกรณีที่ n มีค่าต่างๆ ได้ผลลัพธ์ดังนี้
+        //                         1234
+        //             123         5678
+        // 12          456         9101112        
+        // 34          789         13141516
+        // n=2         n=3         n=4
+
+    function draw(n) {
+        let output = "";
+        let z = 1;
+        for (let x = 0; x < n; x++) {
+            for (let y = 0; y < n; y++) {
+                output = output + z;
+                z++;
+            }
+            output = output + "\n";
+        }
+        console.log(output);
+    }
+    </script>
+</body>
+</html>
