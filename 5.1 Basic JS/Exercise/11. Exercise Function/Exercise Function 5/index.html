@@ -16,14 +16,14 @@
         // n=2         n=3         n=4
 
     function draw(n) {
-        let num = ""
-        for (let row = n; row > 0; row--) {
-            for (let column = n; column > 0; column--) {
-                num = num + row;
+        let output = "";
+        for (let x = n; x > 0; x--) {
+            for (let y = n; y > 0; y--) {
+                output = output + x;
             }
-            num = num + "\n"
+            output = output + "\n";
         }
-        console.log(num)
+        console.log(output);
     }
     </script>
 </body>
