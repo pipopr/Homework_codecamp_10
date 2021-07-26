@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Arrow Function 1</title>
+</head>
+<body>
+    <script>
+        // แปลง function ข้างล่างให้อยู่ในรูป arrow function
+        // function ask(question, yes, no) {
+        //    if (confirm(question)) yes()
+        //    else no();
+        //    }
+
+        //    ask(
+        //    "Do you agree?",
+        //    function() { alert("You agreed."); },
+        //    function() { alert("You canceled the execution."); }
+        //    );
+
+    let ask = (question, yes, no) => {
+        if (confirm(question)) yes()
+        else no();
+    }
+
+    ask("Do you agree?", function() {alert("You agreed.");}, function() {alert("You cancelled the execution.");});
+    </script>
+</body>
+</html>
