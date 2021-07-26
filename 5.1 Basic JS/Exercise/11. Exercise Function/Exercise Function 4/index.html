@@ -16,14 +16,14 @@
         // n=2         n=3         n=4
 
     function draw(n) {
-        let num = ""
-        for (let row = 1; row <= n; row++) {
-            for (let column = 1; column <= n; column++) {
-                num = num + row;
+        let output = "";
+        for (let x = 1; x <= n; x++) {
+            for (let y = 0; y < n; y++) {
+                output = output + x;        
             }
-            num = num + "\n"
+        output = output + "\n"              //จบ 1 รอบให้ขึ้นบรรทัดใหม่
         }
-        console.log(num)
+    console.log(output);
     }
     </script>
 </body>
