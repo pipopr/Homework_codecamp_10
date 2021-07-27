@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Object's Method 1</title>
+</head>
+<body>
+    <script>
+        // การทำงานของ code ดังกล่าวจะได้อะไรออกมา
+
+        let user = {
+            name: "John",
+            go: function() { alert(this.name) }
+        };
+
+        (user.go)()
+
+        // ถ้าเติม ; หลัง } ใบบรรทัดที่ 16 จะมี alert ว่า "John"
+    </script>
+</body>
+</html>

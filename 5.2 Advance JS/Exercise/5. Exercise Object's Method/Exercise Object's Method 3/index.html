@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Object's Method 3</title>
+</head>
+<body>
+    <script>
+        // สร้าง object calculator จาก 3 methods นี้:
+        //    - read() ใช้ prompts สำหรับรับค่ามา 2 ค่าและเก็บเป็น object properties.
+        //    - sum() คืนค่าผลบวกของ 2 ค่านั้น.
+        //    - mul() คืนค่าผลคูณของ 2 ค่านั้น.
+
+        let calculator = {
+            read() {
+                this.number1 = Number(prompt("Enter first number"));
+                this.number2 = Number(prompt("Enter second number"));
+            },
+            mul() {
+                return this.number1 * this.number2;
+            },
+            sum() {
+                return this.number1 + this.number2;
+            }
+        };
+
+        calculator.read();
+        alert( calculator.sum() );
+        alert( calculator.mul() );
+    </script>
+</body>
+</html>

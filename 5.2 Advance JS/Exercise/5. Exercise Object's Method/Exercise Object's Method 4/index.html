@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Object's Method 4</title>
+</head>
+<body>
+    <script>
+        // ให้ Object ชื่อ ladder มี method ขึ้น และ ลง
+        //    - Object ชื่อ ladder สามารถเรียก function แบบนี้ได้
+        //        ladder.up();
+        //        ladder.up();
+        //        ladder.down();
+        //        ladder.showStep(); // 1
+        //    - ดัดแปลง Object ชื่อ ladder สามารถเรียก function แบบนี้ได้
+        //        ladder.up().up().down().showStep(); // 1
+
+        let ladder = {
+            step: 0,
+            up() {
+                this.step++;
+                return this;        // เพิ่มบรรทัดนี้ เพื่อให้สามารถ return ค่าของ ladder
+            },
+            down() {
+                this.step--;
+                return this;        // เพิ่มบรรทัดนี้ เพื่อให้สามารถ return ค่าของ ladder
+            },
+            showStep: function() { // shows the current step
+                alert( this.step );
+                return this;        // เพิ่มบรรทัดนี้ เพื่อให้สามารถ return ค่าของ ladder
+            }
+        };
+    </script>
+</body>
+</html>
