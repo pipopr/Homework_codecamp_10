@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Constructor 1</title>
+</head>
+<body>
+    <script>
+        // สร้าง constructor function ที่ใช้สำหรับสร้าง Calculator โดยต้องมี 3 Methods นี้
+        //    - read(): รับค่าจาก propmt สองตัว
+        //    - sum(): ให้คืนค่าจากการบวกกันของตัวแปรสองตัว
+        //    - mul(): ให้คืนค่าจากการคูณกันของตัวแปรสองตัว
+
+        function Calculator() {
+            this.read = function() {
+                this.number1 = Number(prompt("Enter first number: "))
+                this.number2 = Number(prompt("Enter second number: "))
+            }
+            this.sum = function() {
+                return this.number1 + this.number2
+            }
+            this.mul = function() {
+                return this.number1 * this.number2
+            }
+        }
+        let calculator = new Calculator();
+
+        calculator.read();
+
+        console.log( calculator.sum() );
+        console.log( calculator.mul() );
+    </script>
+</body>
+</html>
