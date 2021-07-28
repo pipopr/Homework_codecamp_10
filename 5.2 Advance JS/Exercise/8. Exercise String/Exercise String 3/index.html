@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise String 3</title>
+</head>
+<body>
+    <script>
+        // เขียนฟังก์ชันที่ truncate(str, maxlength) โดยฟังก์ชันดังกล่าวจะเช็คว่า string ที่ถูกส่งเข้ามามีความยาวเกิน maxlength ไหม ถ้าเกินให้แทน ข้อความต่อจากนั้นด้วย “...”
+        //    truncate("What I'd like to tell on this topic is:", 20) = "What I'd like to te…"
+        //    truncate("Hi everyone!", 20) = "Hi everyone!"
+
+        str1 = "What I'd like to tell on this topic is:";
+        str2 = "Hi everyone!";
+
+        
+        function truncate(str, maxlength) {
+            if (str.length > maxlength) {
+                return `"${str.slice(0, maxlength)}..."`;
+            }
+            return `"${str}"`;
+        }
+
+        console.log( truncate(str1, 20) );
+        console.log( truncate(str2, 20) );
+    </script>
+</body>
+</html>

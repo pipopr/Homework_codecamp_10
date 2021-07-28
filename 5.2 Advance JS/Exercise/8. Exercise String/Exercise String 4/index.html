@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise String 4</title>
+</head>
+<body>
+    <script>
+        // เขียนฟังก์ชันที่ extractCurrencyValue(string, rate) โดยที่ฟังก์ชันดังกล่าวจะแปลง string ที่เป็นค่าเงิน dollar 
+        // ให้เป็น number ที่มีค่าเป็นเงินบาทไทย โดยอ้างอิง  rate จาก parameters ตัวที่สอง ที่ส่งมาให้
+
+        function extractCurrencyValue(string, rate) {
+            let value = Number.parseFloat(string.slice(1));
+            
+            return(value * Number(rate));
+        }
+
+        console.log( extractCurrencyValue('$120', 30.5) === 3660 ); // true
+    </script>
+</body>
+</html>
