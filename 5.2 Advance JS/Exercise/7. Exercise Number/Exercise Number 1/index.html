@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Number 1</title>
+</head>
+<body>
+    <script>
+        // ให้เขียนฟังก์ชัน random(min, max) ที่จะ random เลข float ตั้งแต่ min จนถึง max มาให้เรา (ไม่รวม max)
+
+        function random(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+        
+        alert( random(1, 5) ); // 1.2345623452
+        alert( random(1, 5) ); // 3.7894332423
+        alert( random(1, 5) ); // 4.3435234525
+    </script>
+</body>
+</html>
