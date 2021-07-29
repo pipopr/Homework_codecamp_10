@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Array 3</title>
+</head>
+<body>
+    <script>
+        // เขียนฟังก์ชัน sumInput() ที่
+        //    - ใช้ propmt รับ value มาเก็บใน array
+        //    - หยุดถามเมื่อเจอค่าที่ไม่ใช่ ตัวเลข
+        //    - คำนวณผลรวมของตัวเลขทั้งหมดใน Array
+
+        function sumInput() {
+            let value = prompt("Add Input :");
+            let sum = 0;
+            let addedInput = [];
+
+            while ( isFinite(value) === true ) {
+                addedInput.push( Number(value) );
+                sum += Number(value);
+                value = prompt("Add another Input :")
+            }
+            return (`Total Input = ${sum}`);
+        }
+
+        console.log( sumInput() );
+    </script>
+</body>
+</html>
