@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise React.js 2</title>
+</head>
+<body>
+    <script>
+        // ถ้าเรามี Object ชื่อ salaries
+
+        // ให้สร้าง function topSalary(salaries) ที่คืนค่าชื่อคนที่มีเงินเดือนสูงสุด
+        // - ถ้า salaries ไม่มีข้อมูลให้คืนค่าเป็น null
+        // - ถ้าสูงสุดมีหลายคน ก็ให้คืนใครก็ได้สักคน
+
+        let salaries = {
+            "John": 100,
+            "Pete": 300,
+            "Mary": 250
+        };
+
+        function topSalary(salaries) {
+            let mostsalary = 0;
+            let whomMostSalary = null;
+
+            for (let name in salaries) {
+                if (salaries[name] > mostsalary) {
+                    mostsalary = salaries[name];
+                    whomMostSalary = name;
+                }
+            }
+            return whomMostSalary;
+        }
+
+        console.log( topSalary(salaries) );
+    </script>
+</body>
+</html>
