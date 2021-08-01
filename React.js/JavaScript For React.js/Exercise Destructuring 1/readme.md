@@ -1,6 +1,6 @@
 ### CodeCamp # 10
     1. Pipop Rungrojwongsiri
-    2. Advance JS : Exercise React.js 1
+    2. Javascript for React : Exercise Destructuring 1
         2.1 ถ้าเรามี Object 
             let user = {
             name: "John",

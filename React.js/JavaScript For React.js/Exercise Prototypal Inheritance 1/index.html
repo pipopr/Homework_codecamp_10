@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Prototypal Inheritance 1</title>
+</head>
+<body>
+    <script>
+        // ในบรรทัดที่มีเลข 1 2 และ 3 จะได้ค่าออกมาเป็นอะไร
+
+        let animal = {
+            jumps: null
+        };
+
+        let rabbit = {
+            __pronto__: animal,
+            jumps: true
+        };
+
+        alert( rabbit.jumps ); // ? (1) ได้ true
+
+        delete rabbit.jumps;
+
+        alert( rabbit.jumps ); // ? (2) ได้ null
+
+        delete animal.jumps;
+
+        alert( rabbit.jumps ); // ? (3) ได้ undefined
+    </script>
+</body>
+</html>
