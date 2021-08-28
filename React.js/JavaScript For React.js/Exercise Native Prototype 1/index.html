@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Native Prototype 1</title>
+</head>
+<body>
+    <script>
+        // ให้เพิ่ม Method defer เข้าไปใน prototypes ของทุกฟังก์ชัน โดย Method นี้จะทำหน้าที่ alert ข้อความออกมาหลังจากผ่านไป ms
+
+        //function f() {
+        //    alert("Hello!");
+        //}
+
+        //f.defer(1000); //แสดง "Hello!" หลังจากผ่านไป 1 วินาที  
+
+        Function.prototype.defer = function(ms){
+            setTimeout(this, ms);
+        }
+
+        function f() {
+            alert("Hello!")
+        }
+
+        f.defer(1000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Modern Prototype 2</title>
+</head>
+<body>
+    <script>
+        //สร้าง object rabbit ด้วย new keyword
+
+        function Rabbit(name) {
+            this.name = name;
+        }
+
+        Rabbit.prototype.sayHi = function()
+        {
+            alert(this.name);
+        };
+
+        let rabbit = new Rabbit("Rabbit");
+
+        rabbit.sayHi();                         //Rabbit
+        Rabbit.prototype.sayHi();               //undefined
+        Object.getPrototypeOf(rabbit).sayHi();  //undefined
+        rabbit.__proto__.sayHi();               //undefined
+    </script>
+</body>
+</html>

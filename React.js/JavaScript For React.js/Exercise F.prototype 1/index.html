@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise F.Prototype 1</title>
+</head>
+<body>
+    <script>
+        // จากโค๊ดต่อไปนี้มีการสร้าง new Rabbit() ขึ้นมา
+
+        function Rabbit() {}
+        Rabbit.prototype = {
+            eats: true
+        };
+
+        let rabbit = new Rabbit();
+
+        //ถ้ามีการ alert ในบรรทัดดังกล่าวจะได้อะไรออกมา
+        //function Rabbit() {};
+        //Answer = true
+
+        //ถ้ามีการเปลี่ยนบรรทัดสีเหลืองจะเป็นอย่างไร
+        //Rabbit.prototype.eats = false;
+        //Answer = false
+
+        //ถ้ามีการเปลี่ยนบรรทัดสีเหลืองจะเป็นอย่างไร
+        //delete rabbit.eats;
+        //Answer = true
+
+        //ถ้ามีการเปลี่ยนบรรทัดสีเหลืองจะเป็นอย่างไร
+        delete Rabbit.prototype.eats;
+        //Answer = undefined
+
+        alert( rabbit.eats ); //true
+
+    </script>
+</body>
+</html>
